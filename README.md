@@ -1,9 +1,10 @@
 1. [Hotkeys](#hotkeys)
-2. [Editing mappings](#editing-mappings)
-   1. [Move a line of text using ALT+[jk] or Command+[jk] on mac](#move-a-line-of-text-using-altjk-or-commandjk-on-mac)
-3. [Moving around, tabs, windows and buffers](#moving-around-tabs-windows-and-buffers)
-   1. [Other](#other)
-4. [Requirements](#requirements)
+   1. [Editing mappings](#editing-mappings)
+      1. [Move a line of text using ALT+[jk] or Command+[jk] on mac](#move-a-line-of-text-using-altjk-or-commandjk-on-mac)
+      2. [Search commands](#search-commands)
+   2. [Moving around, tabs, windows and buffers](#moving-around-tabs-windows-and-buffers)
+   3. [Other](#other)
+2. [Requirements](#requirements)
 
 ## Hotkeys
 ```
@@ -11,19 +12,21 @@
 <F12>                   Switch background to light/dark
 ```
 
-## Editing mappings
-### Move a line of text using ALT+[jk] or Command+[jk] on mac
+### Editing mappings
+#### Move a line of text using ALT+[jk] or Command+[jk] on mac
 ```
 <M-j>                   Move down
 <M-k>                   Move up
+```
 
-## Search commands
+#### Search commands
 ```
 <space>                 Search forward for {pattern}
 <c-space>               Search backward for {pattern}
 <leader> <cr>           Disable highlight when is pressed (:noh)
+```
 
-## Moving around, tabs, windows and buffers
+### Moving around, tabs, windows and buffers
 ```
 <leader> ba             Close all the buffersleader
 <leader> bd             Close the current buffer
