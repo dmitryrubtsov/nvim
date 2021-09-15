@@ -8,6 +8,8 @@
 
 ## Hotkeys
 ```
+gcc                     to comment out a line
+gc                      to comment out the target of a motion
 <F3>                    Display line numbers
 <F12>                   Switch background to light/dark
 ```

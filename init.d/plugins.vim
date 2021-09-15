@@ -25,6 +25,7 @@ call plug#begin('$VIMDATA/plugged')
 " Plug 'kien/ctrlp.vim', { 'on': ['CtrlP', 'CtrlPBuffer']}, " Fuzzy file, buffer, mru, tag, etc finder
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' } " Vim plugin that displays tags in a window
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } " A tree explorer plugin
+Plug 'tpope/vim-commentary' " Comment stuff out.
 
 " --> Languages support
 " Plug 'Shougo/deoplete.nvim' " Dark powered asynchronous completion framework for neovim/Vim8
