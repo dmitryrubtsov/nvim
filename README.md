@@ -59,4 +59,8 @@ gc                      to comment out the target of a motion
 ```
 
 ## Requirements  
-- [DroidSansMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete%20Mono.otf)
+1. [DroidSansMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete%20Mono.otf)
+2. deoplete.nvim
+```
+pip3 install --user pynvim
+```

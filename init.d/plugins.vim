@@ -26,30 +26,38 @@ call plug#begin('$VIMDATA/plugged')
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' } " Vim plugin that displays tags in a window
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } " A tree explorer plugin
 Plug 'tpope/vim-commentary' " Comment stuff out.
+Plug 'editorconfig/editorconfig-vim'
 
 " --> Languages support
-" Plug 'Shougo/deoplete.nvim' " Dark powered asynchronous completion framework for neovim/Vim8
-" Plug 'roxma/nvim-yarp' " requirements for deoplete
-" Plug 'roxma/vim-hug-neovim-rpc' " requirements for deoplete
+" Dark powered asynchronous completion framework for neovim/Vim8
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
 " Plug 'w0rp/ale' " Asynchronous linting/fixing for Vim and Language Server Protocol (LSP) integration
 
 " --> Colorschemes
 Plug 'NLKNguyen/papercolor-theme' " Light & Dark Vim color schemes inspired by Google's Material Design
 
 " --> Other
-" Plug 'airblade/vim-gitgutter' " A Vim plugin which shows a git diff in the gutter
+Plug 'airblade/vim-gitgutter' " A Vim plugin which shows a git diff in the gutter
 " Plug 'ervandew/supertab' " Perform all your vim insert mode completions with Tab 
 Plug 'itchyny/lightline.vim' " A light and configurable statusline/tabline
 " Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair
 " Plug 'maxbrunsfeld/vim-yankstack' " A lightweight implementation of emacs's kill-ring
 " Plug 'maximbaz/lightline-ale' " ALE indicator for the lightline
-" if has('gui_running')
+if has('gui_running')
 Plug 'ryanoasis/vim-devicons' " Adds file type glyphs/icons to popular Vim plugins
-" endif
+endif
 " Plug 'terryma/vim-multiple-cursors' " True Sublime Text style multiple selections
 " Plug 'tpope/vim-fugitive', " A Git wrapper so awesome
 
 " --> Markdown
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 " Plug 'godlygeek/tabular', { 'for': 'markdown' } " For text filtering and alignment
 " Plug 'plasticboy/vim-markdown', { 'for': 'markdown' } " Markdown
 " Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
