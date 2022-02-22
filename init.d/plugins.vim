@@ -21,8 +21,7 @@ endif
 
 call plug#begin('$VIMDATA/plugged')
 " --> Code/Project navigation
-" Plug 'corntrace/bufexplorer' " Switch between buffers by using the one of the default public interfaces
-" Plug 'kien/ctrlp.vim', { 'on': ['CtrlP', 'CtrlPBuffer']}, " Fuzzy file, buffer, mru, tag, etc finder
+Plug 'kien/ctrlp.vim', { 'on': ['CtrlP', 'CtrlPBuffer']}, " Fuzzy file, buffer, mru, tag, etc finder
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' } " Vim plugin that displays tags in a window
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } " A tree explorer plugin
 Plug 'tpope/vim-commentary' " Comment stuff out.
@@ -53,7 +52,7 @@ Plug 'itchyny/lightline.vim' " A light and configurable statusline/tabline
 if has('gui_running')
 Plug 'ryanoasis/vim-devicons' " Adds file type glyphs/icons to popular Vim plugins
 endif
-" Plug 'terryma/vim-multiple-cursors' " True Sublime Text style multiple selections
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " Plug 'tpope/vim-fugitive', " A Git wrapper so awesome
 
 " --> Markdown
