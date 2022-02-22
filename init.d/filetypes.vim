@@ -31,3 +31,6 @@ augroup encrypted
   " after the file has been written.
   autocmd BufWritePost,FileWritePost *.asc,*.gpg,*.pgp u
 augroup END
+
+autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python' shellescape(@%, 1)<CR>
+autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python' shellescape(@%, 1)<CR>
